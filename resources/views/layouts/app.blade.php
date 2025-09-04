@@ -1,13 +1,16 @@
-
 <!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Authentication - Website Portal Desa Sungai Duri II </title>
-  <link rel="shortcut icon" type="image/png" href="admin/assets/images/logos/favicon.png" />
-  <link rel="stylesheet" href="admin/assets/css/styles.min.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Authentication - Website Portal Desa Sungai Duri II</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="{{ asset('admin/assets/images/logos/favicon.png') }}" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ asset('admin/assets/css/styles.min.css') }}" />
 </head>
 
 <body>
@@ -18,15 +21,16 @@
       <div class="d-flex align-items-center justify-content-center w-100">
         <div class="row justify-content-center w-100">
 
-              @yield('auth')
+          @yield('auth')
 
-          </div>
         </div>
       </div>
     </div>
   </div>
-  <script src="admin/assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="admin/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="{{ asset('admin/assets/libs/jquery/dist/jquery.min.js') }}"></script>
+  <script src="{{ asset('admin/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 </body>
 
 </html>
